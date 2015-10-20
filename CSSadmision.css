@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+
+#cabecera {
+	border:#FF0000 2px solid;
+	height:72px;
+	width:1020px;
+}
+
+#logo {
+	border:#00FF00 2px solid;
+	height:72px;
+	width:300px;
+}
