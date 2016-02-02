@@ -1,0 +1,27 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: fig2dev Version 3.2 Patchlevel 5a -->
+<!-- CreationDate: Mon Dec 12 16:50:17 2011 -->
+<!-- Magnification: 1.050 -->
+<!-- Copyright: Arno Formella, http://lia.ei.uvigo.es -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1.7in" height="1.0in" viewBox="-123 -183 2071 1252">
+<desc>LIA logo</desc>
+<g style="stroke-width:.025in; fill:none">
+<!-- Line -->
+<polyline points="661,0 1322,0 1322,944 "
+style="stroke:#00d100;stroke-width:158; stroke-linejoin:round; stroke-linecap:round;"
+/>
+<!-- Line -->
+<polyline points="661,0 661,944 "
+style="stroke:#0000ff;stroke-width:158; stroke-linejoin:round; stroke-linecap:round;"
+/>
+<!-- Line -->
+<polyline points="0,0 0,944 661,944"
+style="stroke:#ff0000;stroke-width:158; stroke-linejoin:round; stroke-linecap:round;"
+/>
+<!-- Line -->
+<polyline points="1543,-104 1868,-104 1868,131 1543,131 1543,367 1868,367 "
+style="stroke:#000000;stroke-width:95; stroke-linejoin:round; stroke-linecap:round;"
+/>
+</g>
+</svg>

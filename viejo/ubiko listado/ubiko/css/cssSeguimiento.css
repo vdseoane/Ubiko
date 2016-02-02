@@ -1,0 +1,255 @@
+﻿@charset "UTF-8";
+
+
+
+#cambio{
+    margin: 0 auto;
+	border:#FF0000 0px solid;
+	width: 1010px;
+	height: 600px;
+	padding-top:50px;
+	}
+
+
+.der {float:right;}
+.izquierda{
+	float: left;
+	display:inline;
+	font-family:Arial, Helvetica, sans-serif;
+	size:15px;
+	color:#4c4c4c;
+	border:#33FFFF 0px solid;
+	/*margin-bottom:3px;*/
+	}
+.centro {margin: 0 auto;}
+
+.buscar_paciente{
+	
+	
+	height: 40px;
+	width: 540px;
+	border:#00FF00 0px solid;
+	color:#fff;
+	background-color: #4c4c4c;
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	}
+	
+#numero{
+	color:#fff;
+	height: 16px;
+	width: 16px;
+	text-align: center;
+	border:#FFFFFF 0px solid;
+	margin: 11px 0 0 11px;
+
+}
+
+
+#paciente{
+	color:#fff;
+	height: 16px;
+	width: 130px;
+	text-align: center;
+	border:#FFFFFF 0px solid;
+	margin: 11px 5px 0 10px;
+}
+
+#busqueda{
+	height: 23px;
+	width: 225px;
+	border:#FFFFFF 1px solid;
+	color: #675F5F;
+	margin: 7px 0 0 0;
+	background-color: #F1F0E7;
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 5px 5px 5px 5px;	
+	}
+
+
+#buscar{
+	
+	height: 25px;
+	width: 55px;
+margin-top: 7px;
+margin-left: -40px;
+	
+}
+
+#nhc{
+	color:#fff;
+	height: 16px;
+	width: 20px;
+	text-align: center;
+	border:#FFFFFF 0px solid;
+	margin: 11px 0 0 60px;
+}
+.der {float:right;}
+.izquierda1{
+	float: left;
+	display:inline;
+	font-family:Arial, Helvetica, sans-serif;
+	size:15px;
+	color:#4c4c4c;
+	border:#000 0px solid;
+	/*margin-bottom:3px;*/
+	}
+.centro {margin: 0 auto;}
+
+
+#cambio2{
+    margin: 0 auto;
+	border:#FF0000 0px solid;
+	width: 1000px;
+	height: 500px;
+	
+	
+	}
+	#cambio3{
+    
+	border:#FF0000 0px solid;
+	width: 473px;
+	height: 480px;
+	
+	
+	}
+	#cambio4{
+    
+	border:#FF0000 0px solid;
+	width: 480px;
+	height: 480px;
+	
+	
+	}
+	
+.der {float:right;}
+.izquierda2{
+	float: left;
+	height: 28px;
+	width: 425px;
+     background-image:url("../img/lista.jpg");
+	 background-repeat: no-repeat;
+	font-family:Arial, Helvetica, sans-serif;
+	size:15px;
+	color:#4c4c4c;
+	border:#000 0px solid;
+	/*margin-bottom:3px;*/
+	}
+.centro {margin: 0 auto;}
+
+#control_paciente{
+	height: 26px;
+	width: 431px;
+	border:#0000ff 0px solid;
+	
+	background-color: #F9F9F9;
+	
+	
+	
+	
+	margin-top: 40px;
+    margin-left: 45px;
+
+	
+}
+
+
+
+.der {float:right;}
+.izquierda5{
+	float: left;
+	height: 26px;
+	width: 423px;
+    display:inline;
+	font-family:Arial, Helvetica, sans-serif;
+	size:15px;
+	color:#4c4c4c;
+	border:#000 0px solid;
+	/*margin-bottom:3px;*/
+	}
+.centro {margin: 0 auto;}
+
+#num{
+	color:#000;
+	height: 16px;
+	width: 30px;
+	text-align: center;
+	border:#000000 0px solid;
+	margin: 3px 0 0 35px;
+
+}
+#nombre{
+	color:#000;
+	height: 16px;
+	width: 280px;
+	text-align: center;
+	border:#000000 0px solid;
+	margin: 3px 5px 0 5px;
+}
+#num1{
+	color:#000;
+	height: 16px;
+	width: 50px;
+	text-align: center;
+	border:#000000 0px solid;
+	margin: 3px 0 0 5px;
+
+}
+
+#cambio4{
+    
+	border:#FF0000 0px solid;
+	width: 480px;
+	height: 480px;
+	
+	
+	}
+.der {float:right;}
+.izquierda3{
+	float: left;
+	height:28px;
+	width:425px;
+     background-image:url("../img/lista.jpg");
+	 background-repeat: no-repeat;
+	font-family:Arial, Helvetica, sans-serif;
+	size:15px;
+	color:#4c4c4c;
+	border:#000 0px solid;
+	/*margin-bottom:3px;*/
+	}
+.centro {margin: 0 auto;}
+
+#control_paciente1{
+	height: 26px;
+	width: 431px;
+	border:#0000ff 0px solid;
+	
+	background-color: #F9F9F9;
+	
+	
+	
+	
+	margin-top: 40px;
+    margin-left: 45px;
+
+	
+}
+
+
+
+.der {float:right;}
+.izquierda4{
+	float: left;
+	height: 26px;
+	width: 423px;
+	display:inline;
+	font-family:Arial, Helvetica, sans-serif;
+	size:15px;
+	color:#4c4c4c;
+	border:#000 0px solid;
+	/*margin-bottom:3px;*/
+	}
+.centro {margin: 0 auto;}
+
