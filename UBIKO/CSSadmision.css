@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* CSS Document */
+
+#main{
+	border:#FFCC00 0px solid;
+	height:1020px;
+	width:1020px;
+	margin: 0 auto;
+}
+
+#cabecera {
+	border:#FF0000 0px solid;
+	height:72px;
+	width:1020px;
+}
+
+#logo {
+	float: left;
+	border:#00FF00 0px solid;
+	height:72px;
+	width:250px;
+}
+#navegacion {
+	float: left;
+	border:#581200 1px solid;
+	height:72px;
+	width:510px;
+}
+#login {
+	float: left;
+	border:#074100 0px solid;
+	height:72px;
+	width:250px;
+}
+#navegacion ul{
+	list-style-type: none;
+	text-align: center;
+	border:#0000ff 1px solid;
+	height:30px;
+	width:510px;
+	
+}
+#navegacion li{
+	width: 100px;
+}
+#navegacion ul li{
+	display:inline;
+	text-align: center;
+}
+#navegacion li a {
+	float:left;
+	color: #ffffff;
+	font-size: 16px;
+	background-color: #4c4c4c;
+	border: 0px solid #ccc;
+	text-decoration: none;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	width:100px;
+	font-family:Arial, Helvetica, sans-serif;
+
+}
+
