@@ -10,7 +10,7 @@
 /*cabecera*/
 #cabecera {
 	border:#FF0000 0px solid;
-	height:72px;
+	height:80px;
 	width:1020px;
 }
 
@@ -25,6 +25,7 @@
 	border:#581200 0px solid;
 	height:72px;
 	width:520px;
+	padding-top: 32px;
 }
 .navegacion_ul{
 	border:#FF0598 0px solid;
@@ -32,15 +33,32 @@
 	display: inline;
 	margin: 0 auto;
 	margin-left: 0px;
+	
 }
-.navegacion_li a {
+.navegacion_li a{
 	float: left;
 	display: inline;
-	padding-top: 15px;
+	padding-top: 6px;
 	margin-right: 15px;
 	color: #ffffff;
 	font-size: 16px;
 	background-color: #4c4c4c;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	text-align: center;
+	text-decoration: none;
+	font-family:Arial, Helvetica, sans-serif;
+	height: 57px;
+	width: 115px;
+}
+.navegacion_li a:hover{
+	float: left;
+	display: inline;
+	padding-top: 6px;
+	margin-right: 15px;
+	color: #ffffff;
+	font-size: 16px;
+	background-color: #339999;
 	border-top-left-radius:10px;
 	border-top-right-radius:10px;
 	text-align: center;
@@ -54,6 +72,16 @@
 	border:#074100 0px solid;
 	height:72px;
 	width:250px;
+	padding-top: 10px;
+}
+#imagen_login{
+	margin-top: 0px;
+}
+#texto_login{
+	height: 27px;
+	width: 147px;
+	margin-top: 0px;
+	background-color: #FFF;	
 }
 /*Contenedor*/
 #contenedor{
@@ -66,27 +94,27 @@
 	background-color: #FFF;
 	background: rgba(237,237,237,1);
 	background: -moz-linear-gradient(-45deg, rgba(237,237,237,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 100%);
-	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(237,237,237,1)), color-stop(30%, 					rgba(255,255,255,1)), color-stop(100%, 					rgba(255,255,255,1)));
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(237,237,237,1)), color-stop(30%, 										rgba(255,255,255,1)), color-stop(100%, 					rgba(255,255,255,1)));
 	background: -webkit-linear-gradient(-45deg, rgba(237,237,237,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 100%);
 	background: -o-linear-gradient(-45deg, rgba(237,237,237,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 100%);
 	background: -ms-linear-gradient(-45deg, rgba(237,237,237,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 100%);
 	background: linear-gradient(135deg, rgba(237,237,237,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff', GradientType=1 );
-	-webkit-box-shadow: 4px 4px 22px 0px rgba(230,230,230,1);
-	-moz-box-shadow: 4px 4px 22px 0px rgba(230,230,230,1);
-	box-shadow: 4px 4px 22px 0px rgba(230,230,230,1);
-	 
+	-webkit-box-shadow: 4px 4px 22px 0px rgba(235,235,235,1);
+	-moz-box-shadow: 5px 5px 10px 0px rgba(235,235,235,1);
+	box-shadow: 5px 5px 10px 0px rgba(235,235,235,1);
 	 border-radius: 10px 10px 10px 10px;
 	-moz-border-radius: 10px 10px 10px 10px;
 	-webkit-border-radius: 10px 10px 10px 10px;
 	height: 680px;
 	width: 1018px;	
+	margin-top: 10px;
 }
 
 /*Formulario*/
 #divForm{
 	float: left;
-	border:#00C 1px solid;
+	border:#00C 0px solid;
 	height: 100px;	
 	width: 1018px;
 	font-weight: bold;
@@ -97,14 +125,16 @@
 }
 #divForm1{
 	float: left;
-	border:#00C 1px solid;
-	height: 300px;	
+	border:#00C 0px solid;
+	height: 230px;	
 	width: 1018px;
 	font-weight: bold;
-	color: #4C4C4C;
 	font-family:Arial, Helvetica, sans-serif;
 	font-size: 15px;
 	margin-top: 25px;
+}
+.form-control{
+	background-color: #F1F0E7;	
 }
 #nombre{
 	margin-left: 100px;
@@ -120,7 +150,7 @@
 }
 #direccion{
 	margin-left: 100px;
-	width: 632px;	
+	width: 634px;	
 }
 #nhc{
 	margin-left: 30px;
@@ -129,5 +159,14 @@
 #anotaciones{
 	margin-left: 100px;
 	width: 815px;
+}
+#enviar{
+	float: none;
+	margin: 0 auto;
+	border-style: none;
+	border:#00C 0px solid;
+	height: 56px;
+	width: 141px;
+	
 }
 
