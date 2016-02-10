@@ -95,5 +95,39 @@
 	font-size: 15px;
 	margin-top: 25px;
 }
-
+#divForm1{
+	float: left;
+	border:#00C 1px solid;
+	height: 300px;	
+	width: 1018px;
+	font-weight: bold;
+	color: #4C4C4C;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	margin-top: 25px;
+}
+#nombre{
+	margin-left: 100px;
+	width: 200px;	
+}
+#apellidos{
+	margin-left: 30px;
+	width: 400px;	
+}
+#telefono{
+	margin-left: 30px;
+	width: 150px;	
+}
+#direccion{
+	margin-left: 100px;
+	width: 632px;	
+}
+#nhc{
+	margin-left: 30px;
+	width: 150px;	
+}
+#anotaciones{
+	margin-left: 100px;
+	width: 815px;
+}
 
