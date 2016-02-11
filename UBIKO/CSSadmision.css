@@ -75,13 +75,27 @@
 	padding-top: 10px;
 }
 #imagen_login{
+	position: absolute;
+	z-index:0;
 	margin-top: 0px;
+	
 }
 #texto_login{
+	position: absolute;
+	z-index:1;
 	height: 27px;
 	width: 147px;
-	margin-top: 0px;
+	margin-top: 39px;
+	margin-left: 32px;
 	background-color: #FFF;	
+}
+#boton_login{
+	position: absolute;
+	z-index:0;
+	height: 33px;
+	width: 33px;
+	margin-top: 34px;
+	margin-left: 184px;
 }
 /*Contenedor*/
 #contenedor{
