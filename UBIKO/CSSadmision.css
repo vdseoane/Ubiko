@@ -135,9 +135,20 @@
 	color: #4C4C4C;
 	font-family:Arial, Helvetica, sans-serif;
 	font-size: 15px;
-	margin-top: 25px;
+	margin-top: 142px;
 }
 #divForm1{
+	float: left;
+	border:#00C 0px solid;
+	height: 100px;	
+	width: 1018px;
+	font-weight: bold;
+	color: #4C4C4C;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	margin-top: 25px;
+}
+#divForm2{
 	float: left;
 	border:#00C 0px solid;
 	height: 230px;	
@@ -184,3 +195,26 @@
 	
 }
 
+/*Admision*/
+/*-----------------------*/
+#infoPaciente{
+	float: left;
+	border:#F00 1px solid;
+	height: 100px;	
+	width: 800px;
+	margin: 0px;
+}
+#contCentral{
+	float: left;
+	border:#00F 1px solid;
+	height: 400px;	
+	width: 800px;
+	margin: 0px;
+}
+#navCirculos{
+	float: right;
+	border:#000 1px solid;
+	height: 655px;	
+	width: 200px;
+	margin: 0px;
+}
