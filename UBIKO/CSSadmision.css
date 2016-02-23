@@ -202,14 +202,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', end
 	border:#F00 1px solid;
 	height: 100px;	
 	width: 700px;
-	margin: 0px;
+	margin: 0 auto;
 }
 #contCentral{
 	float: left;
 	border:#00F 1px solid;
 	height: 400px;	
 	width: 700px;
-	margin: 0px;
+	margin: 65px 0px 0px 34px;
 }
 #navCirculos{
 	float: right;
@@ -253,3 +253,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', end
 	background: linear-gradient(135deg, rgba(226,226,226,1) 0%, rgba(243,243,243,1) 27%, rgba(247,247,247,1) 55%, rgba(254,254,254,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=1 ); 
 	border-radius: 10px 10px 10px 10px;
+}
+#libros{
+	float: left;
+	border:#00F 0px solid;
+	height: 49px;	
+	width: 52px;
+	margin-top: 8px;
+	margin-left: 23px;
+
+}
+.xxx{
+	float: left;
+	border:#00F 1px solid;
+	height: 90px;	
+	width: 90px;
+	margin-top: 6px;
+	margin-left: 2px;
+	
+}

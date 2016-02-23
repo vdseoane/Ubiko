@@ -10,40 +10,62 @@
 <body>
 <div id="main">
     <div id="cabecera">
-      	<div id="logo"><a href="admision.html"><img src="img/logo_ubiko.jpg" width="165" height="72" alt="logo"/></a></div>
-      	<div id="navegacion">
-      		<ul class="navegacion_ul">
-        		<li class="navegacion_li"><a href="#" title="Admision">Admisi&oacute;n</a></li>
-            	<li class="navegacion_li"><a href="#" title="Seguimiento">Seguimiento</a></li>
-            	<li class="navegacion_li"><a href="#" title="BOX">BOX</a></li>
-            	<li class="navegacion_li"><a href="#" title="Estadisticas">Estad&iacute;sticas</a></li>
-        	</ul>
-       	</div>
-		<div id="login">
-       		<div>
-                <input type="password" name="texto_login" required id="texto_login" class="form-control">
-                <img id="imagen_login" src="img/acceso.jpg" width="220" height="72" alt="login" />
-                <a href="admision.html">
-                	<img id="boton_login" src="img/boton_login.jpg" width="220" height="72" alt="boton_login" />
-                </a>
-            </div>
-   		</div>
+      <div id="logo"><a href="admision.html"><img src="img/logo_ubiko.jpg" width="165" height="72" alt="logo"/></a></div>
+      <div id="navegacion">
+      	<ul class="navegacion_ul">
+        	<li class="navegacion_li"><a href="#" title="Admision">Admisi&oacute;n</a></li>
+          <li class="navegacion_li"><a href="#" title="Seguimiento">Seguimiento</a></li>
+          <li class="navegacion_li"><a href="#" title="BOX">BOX</a></li>
+          <li class="navegacion_li"><a href="#" title="Estadisticas">Estad&iacute;sticas</a></li>
+        </ul>
+      </div>
+		  <div id="login">
+       	<div>
+          <input type="password" name="texto_login" required id="texto_login" class="form-control">
+          <img id="imagen_login" src="img/acceso.jpg" width="220" height="72" alt="login" />
+          <a href="admision.html">
+           	<img id="boton_login" src="img/boton_login.jpg" width="220" height="72" alt="boton_login" />
+          </a>
+        </div>
+   	</div>
     <div id="contenedor">
-    <div id="navCirculos">
-      <div id="navCirculosDentro1">
-        
+      <div id="navCirculos">
+        <div id="navCirculosDentro1">
+          <div id="circulo1" class="xxx">
+          <a href="admision.html">
+             <canvas id="tutorial" width="50" height="50" style="border: 0px solid gray;">
+         Tu navegador no soporta canvas. Actualizalo
+      </canvas>
+    <script type="text/javascript">
+        var c=document.getElementById("tutorial");
+        var cxt=c.getContext("2d");
+ 
+        cxt.fillStyle ="red";
+        cxt.beginPath();
+        cxt.arc(15,15,15,0,Math.PI*2,true);
+                cxt.closePath();
+        cxt.fill();
+    </script>
+    </a>
+          </div>
+          <div id="circulo3" class="xxx"></div>
+          <div id="circulo5" class="xxx"></div>
+          <div id="circulo7" class="xxx"></div>
+          <div id="circulo9" class="xxx"></div>
+          <div id="circulo11" class="xxx"></div>
+        </div>
+        <div id="navCirculosDentro2">
+          <div id="circulo2" class="xxx"></div>
+          <div id="circulo4" class="xxx"></div>
+          <div id="circulo6" class="xxx"></div>
+          <div id="circulo8" class="xxx"></div>
+          <div id="circulo10" class="xxx"></div>
+          <div id="circulo12" class="xxx"></div>
+        </div>
       </div>
-      <div id="navCirculosDentro2">
-        
-      </div>
-    </div>
-    <div id="infoPaciente">
-        
-    </div>
-    <div id="contCentral">
-        
-    </div>
-   
+      <div id="infoPaciente"></div>
+      <div id="libros"><img id="libros" src="img/libros.jpg" width="220" height="72" alt="libros" /></div>
+      <div id="contCentral"></div>
     </div>
     </div>
 </div>
