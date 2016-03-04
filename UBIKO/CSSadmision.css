@@ -135,7 +135,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', end
 	color: #4C4C4C;
 	font-family:Arial, Helvetica, sans-serif;
 	font-size: 15px;
-	margin-top: 142px;
+	margin-top: 85px;
 }
 #divForm1{
 	float: left;
@@ -151,7 +151,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', end
 #divForm2{
 	float: left;
 	border:#00C 0px solid;
-	height: 230px;	
+	height: 195px;	
 	width: 1018px;
 	font-weight: bold;
 	font-family:Arial, Helvetica, sans-serif;
@@ -189,13 +189,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', end
 	float: none;
 	margin: 0 auto;
 	border-style: none;
-	border:#00C 0px solid;
-	height: 56px;
-	width: 141px;
-	
+	border:#00C 2px solid;
+	height: 120px;
+	width: 160px;
 }
 
-/*Admision*/
+/*Seguimiento*/
 /*-----------------------*/
 #infoPaciente{
 	float: left;
@@ -265,10 +264,133 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', end
 }
 .xxx{
 	float: left;
-	border:#00F 1px solid;
+	border:#00F 0px solid;
 	height: 90px;	
 	width: 90px;
 	margin-top: 6px;
 	margin-left: 2px;
 	
 }
+span.circulos{
+	border:#F3F3F3 5px solid;
+  border-radius: 50px;
+  display: inline-block;
+  font-weight: bold;
+  width: 88px; 
+  height: 88px;
+  margin: 0 auto;
+}
+span.blanco{
+	background-color: #FFF;
+	border:#F3F3F3 5px solid;
+	color: #000;
+	display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+span.azul{
+  background: #67BBFF;
+	border:#FFF 5px solid;
+	display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #FFF;
+}
+span.pistacho{
+  background: #BBAD3C;
+	border:#FFF 5px solid;
+	display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #FFF;
+}
+span.lila{
+  background: #CC99FF;
+	border:#FFF 5px solid;
+	display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #FFF;
+}
+span.naranja{
+  background: #FF9900;
+	border:#FFF 5px solid;
+	display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #FFF;
+}
+span.violeta{
+  background: #800080;
+	border:#FFF 5px solid;
+	display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #FFF;
+}
+span.rojo{
+  background: #FF0000;
+	border:#FFF 5px solid;
+	display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #FFF;
+}
+span.negro{
+  background: #333333;
+	border:#FFF 5px solid;
+	display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #FFF;
+}
+span.verde{
+  background: #00FF00;
+	border:#FFF 5px solid;
+	display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #FFF;
+}
+span.azulAD{
+  background: #0099FF;
+	border:#FFF 5px solid;
+	display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #FFF;
+}
+span.azulTriaje{
+  background: #004B7E;
+	border:#FFF 5px solid;
+	display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #FFF;
+}
+a:link   
+{   
+ text-decoration:none;   
+}  
