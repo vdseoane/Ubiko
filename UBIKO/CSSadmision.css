@@ -201,14 +201,34 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', end
 	border:#F00 1px solid;
 	height: 100px;	
 	width: 700px;
-	margin: 0 auto;
+	margin-top: 30px;
+	margin-left: 20px;
+}
+.superior{
+	height: 40px;	
+	width: 540px;
+	margin-left: 20px;
+}
+.inferior{
+	height: 40px;	
+	width: 590px;
+	margin-left: 20px;
 }
 #contCentral{
 	float: left;
-	border:#00F 1px solid;
+	border:#D2CFC1 1px solid;
 	height: 400px;	
 	width: 700px;
 	margin: 65px 0px 0px 34px;
+	float: left;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	background-color: #F6F5F1;
+	 border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
 }
 #navCirculos{
 	float: right;
