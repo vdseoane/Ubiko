@@ -186,40 +186,51 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', end
 	width: 815px;
 }
 #enviar{
-	float: none;
-	margin: 0 auto;
-	border-style: none;
-	border:#00C 2px solid;
-	height: 120px;
-	width: 160px;
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+
+	margin-top: 300px;
+	border:#00C 0px solid;
+	height: 58px;
+	width: 144px;
 }
 
 /*Seguimiento*/
 /*-----------------------*/
 #infoPaciente{
 	float: left;
-	border:#F00 1px solid;
-	height: 100px;	
-	width: 700px;
-	margin-top: 30px;
-	margin-left: 20px;
+	border:#F00 0px solid;
+	height: 80px;	
+	width: 591px;
+	margin-top: 50px;
+	margin-left: 82px;
 }
 .superior{
 	height: 40px;	
 	width: 540px;
-	margin-left: 20px;
+	margin-left: 44px;
 }
 .inferior{
 	height: 40px;	
 	width: 590px;
-	margin-left: 20px;
+	margin-left: 0px;
+}
+#botonCancelar{
+	float: left;
+	border:#F00 0px solid;
+	height: 36px;	
+	width: 35px;
+	margin-top: 115px;
 }
 #contCentral{
 	float: left;
 	border:#D2CFC1 1px solid;
 	height: 400px;	
 	width: 700px;
-	margin: 65px 0px 0px 34px;
+	margin: 0px 0px 0px 34px;
 	float: left;
 	border-top-left-radius:10px;
 	border-top-right-radius:10px;
@@ -279,7 +290,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', end
 	height: 49px;	
 	width: 52px;
 	margin-top: 8px;
-	margin-left: 23px;
+	margin-left: 71px;
 
 }
 .xxx{
@@ -288,8 +299,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', end
 	height: 90px;	
 	width: 90px;
 	margin-top: 6px;
-	margin-left: 2px;
-	
+	margin-left: 2px;	
 }
 span.circulos{
 	border:#F3F3F3 5px solid;
@@ -299,6 +309,11 @@ span.circulos{
   width: 88px; 
   height: 88px;
   margin: 0 auto;
+
+
+ -webkit-box-shadow: 3px 3px 5px 0px rgba(181,177,181,1);
+-moz-box-shadow: 3px 3px 5px 0px rgba(181,177,181,1);
+box-shadow: 3px 3px 5px 0px rgba(181,177,181,1);
 }
 span.blanco{
 	background-color: #FFF;
