@@ -1,0 +1,59 @@
+Base de datos Ubiko
+
+USE Ubiko;
+GO
+
+CREATE TABLE Paciente (
+DNIPaciente nvarchar(9) NOT NULL,
+Nombre nvarchar(25) NOT NULL,
+Apellido1 nvarchar(15) NOT NULL,
+Apellido2 nvarchar(15), 
+Calle nvarchar(30),
+Numero int,
+Piso nvarchar(10),
+Estado nvarchar(15)
+CONSTRAINT PK_Paciente PRIMARY KEY NONCLUSTERED (DNIPaciente), 
+);
+GO
+
+CREATE TABLE Usuario (
+idUsuario nvarchar(15) NOT NULL,
+password nvarchar(25) NOT NULL,
+CONSTRAINT PK_Usuario PRIMARY KEY NONCLUSTERED (idUsuario), 
+);
+GO
+
+CREATE TABLE Localizacion (
+idLocalizacion nvarchar(10) NOT NULL,
+nPlanta int NOT NULL,
+nombreLocalizacion nvarchar(10),
+CONSTRAINT PK_Localizacion PRIMARY KEY NONCLUSTERED (idLocalizacion), 
+);
+GO
+
+CREATE TABLE Cama (
+numeroCama int NOT NULL,
+idUsuario nvarchar(15) NOT NULL REFERENCES Usuario(idUsuario),
+idLocalizacion nvarchar(10) NOT NULL REFERENCES Localizacion(idLocalizacion),
+CONSTRAINT PK_Cama PRIMARY KEY NONCLUSTERED (numeroCama, idUsuario, idLocalizacion)
+);
+GO
+
+
+CREATE TABLE UbicacionPaciente (
+DNIPaciente nvarchar(9) NOT NULL,
+idUsuario nvarchar(15) NOT NULL, REFERENCES Usuario(idUsuario),
+idLocalizacion nvarchar(10) NOT NULL REFERENCES Localizacion(idLocalizacion),
+fecha DATE,
+hInicio time,
+hFin time,
+CONSTRAINT PK_UbicacionPaciente PRIMARY KEY NONCLUSTERED (DNIPaciente, idUsuario, idLocalizacion)
+);
+GO
+
+
+DROP TABLE Paciente;
+DROP TABLE Usuario;
+DROP TABLE Localizacion;
+DROP TABLE Cama;
+DROP TABLE UbicacionPaciente;
