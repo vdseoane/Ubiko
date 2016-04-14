@@ -1,6 +1,6 @@
 Base de datos Ubiko
 
-USE Ubiko;
+USE UbikoDB;
 GO
 
 CREATE TABLE Paciente (
@@ -42,7 +42,7 @@ GO
 
 CREATE TABLE UbicacionPaciente (
 DNIPaciente nvarchar(9) NOT NULL,
-idUsuario nvarchar(15) NOT NULL, REFERENCES Usuario(idUsuario),
+idUsuario nvarchar(15) NOT NULL REFERENCES Usuario(idUsuario),
 idLocalizacion nvarchar(10) NOT NULL REFERENCES Localizacion(idLocalizacion),
 fecha DATE,
 hInicio time,
@@ -57,3 +57,28 @@ DROP TABLE Usuario;
 DROP TABLE Localizacion;
 DROP TABLE Cama;
 DROP TABLE UbicacionPaciente;
+
+
+INSERT INTO Paciente (
+DNIPaciente, Nombre, Apellido1, Apellido2, Calle, Piso, Estado)
+VALUES('00000000A', 'Jose', 'Garcia', 'Garcia', 'Calle Mayor Nº1', '2ºA', '')
+
+INSERT INTO Paciente (
+DNIPaciente, Nombre, Apellido1, Apellido2, Calle, Piso, Estado)
+VALUES('00000000B', 'Antonio', 'Rodriguez', 'Garcia', 'Calle Mayor Nº1', '2ºA', '')
+
+INSERT INTO Paciente (
+DNIPaciente, Nombre, Apellido1, Apellido2, Calle, Piso, Estado)
+VALUES('00000000C', 'Jose', 'Garcia', 'Garcia', 'Calle Mayor Nº1', '2ºA', '')
+
+INSERT INTO Paciente (
+DNIPaciente, Nombre, Apellido1, Apellido2, Calle, Piso, Estado)
+VALUES('00000000D', 'Jose', 'Garcia', 'Garcia', 'Calle Mayor Nº1', '2ºA', '')
+
+INSERT INTO Paciente (
+DNIPaciente, Nombre, Apellido1, Apellido2, Calle, Piso, Estado)
+VALUES('00000000E', 'Jose', 'Garcia', 'Garcia', 'Calle Mayor Nº1', '2ºA', '')
+
+INSERT INTO Paciente (
+DNIPaciente, Nombre, Apellido1, Apellido2, Calle, Piso, Estado)
+VALUES('00000000F', 'Jose', 'Garcia', 'Garcia', 'Calle Mayor Nº1', '2ºA', '')

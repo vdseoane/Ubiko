@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<link rel="stylesheet" href="./css/bootstrap.css">
+
+<link href="./css/cssIndex.css" rel="stylesheet" type="text/css">
+<link href="./css/cssAdmision.css" rel="stylesheet" type="text/css">
+<link href="./css/cssSeguimiento.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+
+<head>
+<title>index</title>
+</head>
+
+<body>
+<div id="main">
+    <div id="cabecera">
+      	<div id="logo"><a href="logIn.html"><img src="img/logo_ubiko.jpg" width="165" height="72" alt="logo"/></a></div>
+      	<div id="navegacion">
+      		<ul class="navegacion_ul">
+        		<li class="navegacion_li" id="admision"><a href="#" title="Admision">Admisi&oacute;n</a></li>
+            	<li class="navegacion_li" id="seguimiento"><a href="#" title="Seguimiento">Seguimiento</a></li>
+            	<li class="navegacion_li" id="box"><a href="#" title="BOX">BOX</a></li>
+            	<li class="navegacion_li" id="estadisticas"><a href="#" title="Estadisticas">Estad&iacute;sticas</a></li>
+        	</ul>
+       	</div>
+		<div id="login">
+       		<div>
+                <input type="password" name="texto_login" required id="texto_login" class="form-control">
+                <img id="imagen_login" src="img/acceso.jpg" width="220" height="72" alt="login" />
+                <a href="admision.html">
+                	<img id="boton_login" src="img/boton_login.jpg" width="220" height="72" alt="boton_login" />
+                </a>
+            </div>
+   		</div>
+    <div id="contenedor">
+        <div id="enviar">
+        	<a href="seguimiento.html"><img src ="img/boton_enviar.jpg"></a> 
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    $("#admision").click(function(event) {
+        $("#contenedor").load('admision.html');
+    });     
+    $("#seguimiento").click(function(event) {
+        $("#contenedor").load('seguimiento.html');
+    });
+    $("#box").click(function(event) {
+        $("#contenedor").load('admision.html');
+    });
+    $("#estadisticas").click(function(event) {
+        $("#contenedor").load('admision.html');
+    });                       
+                               
+                               
+                 
+</script>
+</html>
