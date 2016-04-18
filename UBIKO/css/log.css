@@ -45,7 +45,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', end
     width: 400px;
     margin: 0 auto;
     margin-top: 140px;
-
 }
 
 #divUsuario{
@@ -53,8 +52,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', end
 }
 
 #divPass{
-    margin-top: 15px;
+    margin-top: 15px;  
 }
+
+.form-control{
+    background-color: #F1F0E7;
+    font-size: 20px;
+}
+
 
 #enviar{
     margin: 0 auto;

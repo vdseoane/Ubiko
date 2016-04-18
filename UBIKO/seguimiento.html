@@ -2,8 +2,8 @@
 
       <div id="navCirculos">
         <div id="navCirculosDentro1">
-          <div id="circulo1" class="xxx arrastrable"><a href="admision.html"><span class="circulos blanco">BOX</span></div></a>
-          <div id="circulo3" class="xxx arrastrable"><a href="admision.html"><span class="circulos blanco">TAC</span></div></a>
+          <div id="circulo1" class="xxx arrastrable"><span class="circulos blanco">BOX</span></div>
+          <div id="circulo3" class="xxx arrastrable circulo"><a href="admision.html"><span class="circulos blanco">TAC</span></div></a>
           <div id="circulo5" class="xxx arrastrable"><a href="admision.html"><span class="circulos azul">SALA A</span></div></a>
           <div id="circulo7" class="xxx arrastrable"><a href="admision.html"><span class="circulos lila">SALA TRA</span></div></a>
           <div id="circulo9" class="xxx arrastrable"><a href="admision.html"><span class="circulos violeta">QUI</span></div></a>
@@ -29,6 +29,9 @@
     
 <script type="text/javascript">
   $(".arrastrable").draggable();
+  $("#circulo1").click(function(){
+    $("#circulo1").clone().appendTo(".circulo");
+    });
 </script>
 </html>
 

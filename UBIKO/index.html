@@ -6,6 +6,8 @@
 <link href="./css/cssAdmision.css" rel="stylesheet" type="text/css">
 <link href="./css/cssSeguimiento.css" rel="stylesheet" type="text/css">
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
 
@@ -16,7 +18,7 @@
 <body>
 <div id="main">
     <div id="cabecera">
-      	<div id="logo"><a href="logIn.html"><img src="img/logo_ubiko.jpg" width="165" height="72" alt="logo"/></a></div>
+      	<div id="logo"><a href="logIn.html"><img src="img/logo_ubiko.png" width="165" height="72" alt="logo"/></a></div>
       	<div id="navegacion">
       		<ul class="navegacion_ul">
         		<li class="navegacion_li" id="admision"><a href="#" title="Admision">Admisi&oacute;n</a></li>
@@ -35,9 +37,37 @@
             </div>
    		</div>
     <div id="contenedor">
-        <div id="enviar">
-        	<a href="seguimiento.html"><img src ="img/boton_enviar.jpg"></a> 
+         <form >
+        <div id="divForm">
+            <div class="form-inline">
+                <label id="nombre">Nombre</label>
+                <label id="apellidos">Apellidos</label>
+                <label id="telefono">Tel&eacute;fono</label>
+            </div>
+            <div class="form-inline">
+                <input type="text" name="nombre" id="nombre" class="form-control">
+                <input type="text" name="apellidos" required id="apellidos" class="form-control">
+                <input type="text" name="telefono" required id="telefono" class="form-control">
+            </div>
         </div>
+        <div id="divForm1">
+            <div class="form-inline">
+                <label id="direccion">Direcci&oacute;n</label>
+                <label id="nhc">NHC</label>
+            </div>
+            <div class="form-inline">
+                <input type="text" name="direccion" required id="direccion" class="form-control">
+                <input type="text" name="nhc" required id="nhc" class="form-control">
+            </div>
+        </div>
+        <div id="divForm2">
+            <label id="anotaciones">Anotaciones</label>
+            <textarea name="anotaciones" id="anotaciones" cols="30" rows="6" class="form-control"></textarea>
+        </div>
+        <div id="enviar">
+            <a href="seguimiento.html"><img src ="img/boton_enviar.jpg"></a> 
+        </div>
+    </form>
     </div>
 </div>
 </body>
@@ -53,9 +83,9 @@
     });
     $("#estadisticas").click(function(event) {
         $("#contenedor").load('admision.html');
-    });                       
-                               
-                               
-                 
+    }); 
+    $("#circulo1").click(function(){
+    $("#circulo1").clone().appendTo("#circulo9");
+    });             
 </script>
 </html>
