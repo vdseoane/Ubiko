@@ -63,13 +63,8 @@
 	width: 815px;
 }
 #enviar{
-	position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-
-	margin-top: 300px;
+	position: relative;
+	margin: 0 auto;
 	border:#00C 0px solid;
 	height: 58px;
 	width: 144px;

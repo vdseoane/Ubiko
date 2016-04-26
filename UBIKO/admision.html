@@ -1,24 +1,59 @@
 <!doctype html>
 <html>
-    <div>
-    <form >
-    	<div id="divForm">
-        	<div class="form-inline">
+<link rel="stylesheet" href="./css/bootstrap.css">
+
+<link href="./css/cssIndex.css" rel="stylesheet" type="text/css">
+<link href="./css/cssAdmision.css" rel="stylesheet" type="text/css">
+<link href="./css/cssSeguimiento.css" rel="stylesheet" type="text/css">
+
+<script src="./js/jquery-1.12.0"></script>
+<script src="./js/jquery-1.5.min.js"></script>
+<script src="./js/jquery-ui.js"></script>
+
+<head>
+<title>index</title>
+</head>
+
+<body>
+<div id="main">
+    <div id="cabecera">
+      	<div id="logo"><a href="index.html"><img src="img/logo_ubiko.png" width="165" height="72" alt="logo"/></a></div>
+      	<div id="navegacion">
+      		<ul class="navegacion_ul">
+        		<li class="navegacion_li" id="admision" href=""><a href="#" title="Admision">Admisi&oacute;n</a></li>
+            	<li class="navegacion_li" id="seguimiento"><a href="#" title="Seguimiento">Seguimiento</a></li>
+            	<li class="navegacion_li" id="box"><a href="#" title="BOX">BOX</a></li>
+            	<li class="navegacion_li" id="estadisticas"><a href="#" title="Estadisticas">Estad&iacute;sticas</a></li>
+        	</ul>
+       	</div>
+		<div id="login">
+       		<div>
+                <input type="password" name="texto_login" required id="texto_login" class="form-control">
+                <img id="imagen_login" src="img/acceso.jpg" width="220" height="72" alt="login" />
+                <a href="admision.html">
+                	<img id="boton_login" src="img/boton_login.jpg" width="220" height="72" alt="boton_login" />
+                </a>
+            </div>
+   		</div>
+    <div id="contenedor">
+         <form >
+        <div id="divForm">
+            <div class="form-inline">
                 <label id="nombre">Nombre</label>
                 <label id="apellidos">Apellidos</label>
                 <label id="telefono">Tel&eacute;fono</label>
             </div>
             <div class="form-inline">
-                <input type="text" name="nombre" id="nombre" class="form-control">
+                <input type="text" name="nombre" id="nombre" required class="form-control">
                 <input type="text" name="apellidos" required id="apellidos" class="form-control">
                 <input type="text" name="telefono" required id="telefono" class="form-control">
             </div>
         </div>
         <div id="divForm1">
-        	<div class="form-inline">
-        		<label id="direccion">Direcci&oacute;n</label>
-        		<label id="nhc">NHC</label>
-       		</div>
+            <div class="form-inline">
+                <label id="direccion">Direcci&oacute;n</label>
+                <label id="nhc">NHC</label>
+            </div>
             <div class="form-inline">
                 <input type="text" name="direccion" required id="direccion" class="form-control">
                 <input type="text" name="nhc" required id="nhc" class="form-control">
@@ -29,9 +64,31 @@
             <textarea name="anotaciones" id="anotaciones" cols="30" rows="6" class="form-control"></textarea>
         </div>
         <div id="enviar">
-        	<a href="seguimiento.html"><img src ="img/boton_enviar.jpg"></a> 
+            <input type="image" value="" SRC="img/boton_enviar.jpg"> 
         </div>
     </form>
     </div>
-
+</div>
+</body>
+<script>
+    $("#admision").click(function(event) {
+        $("#contenedor").load('adm.html');
+        event.preventDefault();
+        var rutaEstilo = $(this).attr("../../css/estiloAd.css")
+        $("#admision").attr("href", rutaEstilo)
+    });     
+    $("#seguimiento").click(function(event) {
+        $("#contenedor").load('seguimiento.html');
+    });
+    $("#box").click(function(event) {
+        $("#contenedor").load('adm.html');
+    });
+    $("#estadisticas").click(function(event) {
+        $("#contenedor").load('adm.html');
+    }); 
+    $(".arrastrable").draggable();
+    $("#circulo1").click(function(){
+    $("#circulo1").clone().appendTo(".circulo");
+    });       
+</script>
 </html>

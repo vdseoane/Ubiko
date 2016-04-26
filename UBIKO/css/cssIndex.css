@@ -127,16 +127,3 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', end
 	margin-top: 10px;
 }
 
-
-#enviar{
-	position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-
-	margin-top: 300px;
-	border:#00C 0px solid;
-	height: 58px;
-	width: 144px;
-}
