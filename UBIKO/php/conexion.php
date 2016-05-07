@@ -1,32 +1,50 @@
 <?php
 
-session_start(); 
-//Variables de conexion a la base de datos 
-$host="localhost"; // Nombre del host  
-$username="user"; // usuarioMysql  
-$password="user"; // password Mysql  
-$db_name="ubiko"; // Nombre de la BD 
+include("../conexion/conexionDB.php");
 
-$mysqli = new mysqli("localhost", "user", "user", "ubiko");
-if ($mysqli->connect_errno) {
-    echo "Fallo al conectar a MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
+function login($nombre, $pass,$mysqli)
+{
+	//$nombre= $_POST["usuario"];
+	//$pass= $_POST["password"];
+
+	$sql = "SELECT idUsuario, Password FROM usuario WHERE idUsuario = '".$nombre."'
+			AND Password = '". $pass."'";
+	$result = $mysqli->query($sql);
+
+	if ($result->num_rows > 0) {
+		header('Location: ../../../Ubiko/admision.html');
+	} else { 
+	    echo "no logeado";
+	}
 }
-else
-echo "EXITO";
 
-/* @var $_POST type */
-$nombre= $_POST["usuario"];
-$pass= $_POST["password"];
+function insertarPaciente($nombre, $apellidos, $telefono, $direccion, $nhc, $anotaciones, $mysqli){
+	echo "Holaaaaaa";
+	$sql ="INSERT INTO Paciente(nhc, nombre, apellidos, calle, estado, telefono, anotaciones)
+	VALUES('".$nhc."','".$nombre."','".$apellidos."','".$direccion."','1','".$telefono."','".$anotaciones."')";
 
-$sql = "SELECT idUsuario, Password FROM Usuario WHERE idUsuario = $nombre 
-		AND Password = $pass";
-$result = $mysqli->query($sql);
-
-if ($result->num_rows > 0) {
-	echo "logeado";
-
-} else {
-    header('Location: ../../../Ubiko/admision.html'); 
-    echo "no logeado";
+	$mysqli->query($sql);
+	if ($mysqli == true) {
+		header('Location: ../../../Ubiko/seg.html');
+	}
 }
+
+$mysqli = conexion();
+
+//Datos del paciente
+
+
+
+
+if(isset($_POST['usuario']) && isset($_POST['password'])){
+	login($_POST['usuario'], $_POST['password'],$mysqli);	
+}
+
+if(isset($_POST['nombre']) && isset($_POST['apellidos']) && isset($_POST['nhc'])){
+	insertarPaciente($_POST['nombre'], $_POST['apellidos'], $_POST['telefono'],
+		$_POST['direccion'], $_POST['nhc'], $_POST['anotaciones'],$mysqli);	
+}
+
 ?>
+
+

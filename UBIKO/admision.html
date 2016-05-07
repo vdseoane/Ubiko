@@ -2,41 +2,58 @@
 <html>
 <link rel="stylesheet" href="./css/bootstrap.css">
 
+<link href="./libs/jquery-ui/jquery-ui.min.css" rel="stylesheet" type="text/css">
+
 <link href="./css/cssIndex.css" rel="stylesheet" type="text/css">
 <link href="./css/cssAdmision.css" rel="stylesheet" type="text/css">
 <link href="./css/cssSeguimiento.css" rel="stylesheet" type="text/css">
 
-<script src="./js/jquery-1.12.0"></script>
-<script src="./js/jquery-1.5.min.js"></script>
-<script src="./js/jquery-ui.js"></script>
+<link href="" rel="stylesheet" type="text/css" id="linkestilo">
+
+<!--<script src="./js/jquery-1.9.0.js"></script>-->
+<script src="./libs/jquery-1.12.0.js"></script>
+<script src="./libs/jquery-ui/jquery-ui.min.js"></script>
+<script src='./libs/infinitecarrousel.js'></script>
+<script src='./js/main.js'></script>
+<!--<script src="./js/jquery-1.5.min.js"></script>-->
+
+
+
+
+
 
 <head>
 <title>index</title>
 </head>
 
 <body>
+
+<div id="datepicker"></div>
+
+
 <div id="main">
     <div id="cabecera">
       	<div id="logo"><a href="index.html"><img src="img/logo_ubiko.png" width="165" height="72" alt="logo"/></a></div>
       	<div id="navegacion">
       		<ul class="navegacion_ul">
-        		<li class="navegacion_li" id="admision" href=""><a href="#" title="Admision">Admisi&oacute;n</a></li>
-            	<li class="navegacion_li" id="seguimiento"><a href="#" title="Seguimiento">Seguimiento</a></li>
-            	<li class="navegacion_li" id="box"><a href="#" title="BOX">BOX</a></li>
-            	<li class="navegacion_li" id="estadisticas"><a href="#" title="Estadisticas">Estad&iacute;sticas</a></li>
+        		<li class="navegacion_li" href=""><a href="#"  id="admision" title="Admision">Admisi&oacute;n</a></li>
+            	<li class="navegacion_li" ><a href="#" id="seguimiento"  title="Seguimiento">Seguimiento</a></li>
+            	<li class="navegacion_li"><a href="#" id="box" title="BOX">BOX</a></li>
+            	<li class="navegacion_li"><a href="#" id="estadisticas" title="Estadisticas">Estad&iacute;sticas</a></li>
         	</ul>
        	</div>
 		<div id="login">
        		<div>
                 <input type="password" name="texto_login" required id="texto_login" class="form-control">
                 <img id="imagen_login" src="img/acceso.jpg" width="220" height="72" alt="login" />
-                <a href="admision.html">
-                	<img id="boton_login" src="img/boton_login.jpg" width="220" height="72" alt="boton_login" />
+                <a href="./php/logOut.php">
+                	<img id="boton_login" src="img/power.png" width="220" height="72" alt="boton_login" />
                 </a>
             </div>
    		</div>
+    </div>
     <div id="contenedor">
-         <form >
+         <form method="post" action="./php/conexion.php">
         <div id="divForm">
             <div class="form-inline">
                 <label id="nombre">Nombre</label>
@@ -71,24 +88,7 @@
 </div>
 </body>
 <script>
-    $("#admision").click(function(event) {
-        $("#contenedor").load('adm.html');
-        event.preventDefault();
-        var rutaEstilo = $(this).attr("../../css/estiloAd.css")
-        $("#admision").attr("href", rutaEstilo)
-    });     
-    $("#seguimiento").click(function(event) {
-        $("#contenedor").load('seguimiento.html');
-    });
-    $("#box").click(function(event) {
-        $("#contenedor").load('adm.html');
-    });
-    $("#estadisticas").click(function(event) {
-        $("#contenedor").load('adm.html');
-    }); 
-    $(".arrastrable").draggable();
-    $("#circulo1").click(function(){
-    $("#circulo1").clone().appendTo(".circulo");
-    });       
+
+
 </script>
 </html>

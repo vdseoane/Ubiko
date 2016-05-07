@@ -20,29 +20,14 @@
 	width: 590px;
 	margin-left: 0px;
 }
-#botonCancelar{
-	float: left;
+#botonesScroll{
+	float: right;
 	border:#F00 0px solid;
 	height: 36px;	
 	width: 35px;
-	margin-top: 115px;
+	margin-top: 15px;
 }
-#contCentral{
-	float: left;
-	border:#D2CFC1 1px solid;
-	height: 400px;	
-	width: 700px;
-	margin: 0px 0px 0px 34px;
-	float: left;
-	border-top-left-radius:10px;
-	border-top-right-radius:10px;
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
-	background-color: #F6F5F1;
-	 border-radius: 10px 10px 10px 10px;
-	-moz-border-radius: 10px 10px 10px 10px;
-	-webkit-border-radius: 10px 10px 10px 10px;
-}
+
 #navCirculos{
 	float: right;
 	border:#000 0px solid;
@@ -86,6 +71,15 @@
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=1 ); 
 	border-radius: 10px 10px 10px 10px;
 }
+.item-wrapper {
+	position:relative;
+}
+
+
+.droppable .arrastrable {
+	background-color:red;
+}
+
 #libros{
 	float: left;
 	border:#00F 0px solid;
@@ -226,4 +220,83 @@ span.azulTriaje{
     flex-direction: column;
     text-align: center;
     color: #FFF;
+}
+
+.infiniteCarousel{
+	float: left;
+	width:600px;
+    height:1000px;
+    overflow:hidden;
+    margin-left: 80px;
+}
+
+.viewport{
+	float: left;
+	border:#D2CFC1 1px solid;
+	height: 400px;	
+	width: 600px;
+	margin: 0px 0px 0px 0px;
+	float: left;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	background-color: #F6F5F1;
+	 border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	overflow:hidden;
+}
+
+.list{
+	width:600px;
+    height:1000px;
+    overflow:visible;
+}
+
+
+#columnaCarousel{
+	height: 100px;
+	width: 600px;
+	border:#ABC 0px solid;
+	background-color: #FFF;
+}
+
+#cuadradoLista{
+	height: 100px;
+	width: 100px;
+	float: left;
+	border:#AAA 0px solid;
+	background-color: #123123;
+}
+
+#cuadradoLargoLista{
+	height: 100px;
+	width: 150px;
+	float: left;
+	border:#BBB 0px solid;
+	background-color: #121212;
+}
+
+#columnaCarousel1{
+	height: 100px;
+	width: 600px;
+	border:#ABC 0px solid;
+	background-color: #232323;
+}
+
+#cuadradoLista1{
+	height: 100px;
+	width: 100px;
+	float: left;
+	border:#AAA 0px solid;
+	background-color: #343434;
+}
+
+#cuadradoLargoLista1{
+	height: 100px;
+	width: 150px;
+	float: left;
+	border:#BBB 0px solid;
+	background-color: #545454;
 }
