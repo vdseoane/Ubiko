@@ -1,0 +1,126 @@
+.infiniteCarouselBox{
+	float: left;
+	width:750px;
+    height:1000px;
+    overflow:hidden;
+    margin-left: 55px;
+}
+
+.viewportBox{
+	border:#D2CFC1 1px solid;
+	height: 545px;	
+	width: 750px;
+	margin: 0px 0px 0px 0px;
+	float: left;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	background-color: #F6F5F1;
+	 border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	overflow:hidden;
+}
+
+.listBox{
+	width:750px;
+    height:1000px;
+    overflow:visible;
+}
+
+
+.FilaCarouselBox{
+	float: left;
+	height: 140px;
+	width: 750px;
+	border:#ABC 0px solid;
+}
+
+.cuadradoBox{
+	height: 125px;
+	width: 125px;
+	float: left;
+	border:#AAA 0px solid;
+}
+
+.separacion{
+	height: 125px;
+	width: 31px;
+	float: left;
+	border:#BBB 0px solid;
+}
+
+.filaSeparacion{
+	float: left;
+	height: 15px;
+	width: 750px;
+	border:#ABC 0px solid;
+}
+
+#botonesScroll{
+	float: right;
+	border:#F00 0px solid;
+	height: 36px;	
+	width: 35px;
+	margin-top: 15px;
+}
+
+.inferiorBox {
+    height: 40px;
+    width: 600px;
+    margin-left: 135px;
+    margin-top: 25px;
+}
+
+.infoCamas{
+	float: right;
+	height: 405px;
+    width: 125px;
+    border:#ABC 0px solid;
+    margin-top: 110px;
+	margin-right: 40px;
+}
+
+.separacionCama{
+	float: left;
+	height: 15px;
+	width: 125px;
+	text-align: center;
+	background-color: transparent;
+	border-color: transparent;
+}
+
+#infoBoxCama{
+	float: bottom;
+	height: 20px;
+	width: 80px;
+	text-align: center;
+	background-color: transparent;
+	border-color: transparent;
+	box-shadow: none;
+}
+
+#infoBoxPaciente{
+	float: top;
+	height: 20px;
+	width: 80px;
+	text-align: center;
+	background-color: transparent;
+	border-color: transparent;
+}
+
+#leyenda{
+	float: top;
+	height: 20px;
+	width: 125px;
+	text-align: center;
+	background-color: transparent;
+	border-color: transparent;
+}
+
+.c{
+	height: 80px;
+	width: 80px;
+	margin: 0 auto;
+}

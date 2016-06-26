@@ -1,0 +1,62 @@
+.divEst{
+	border:#D2CFC1 1px solid;
+	height: 560px;	
+	width: 430px;
+	margin: 0px 0px 0px 0px;
+	float: left;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	background-color: #F6F5F1;
+	 border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px	   
+	overflow:hidden;
+}
+
+#derecha{
+	float: right;
+	    margin-right: 50px;
+    margin-top: 50px;
+}
+
+#izquierda{
+	float: left;
+	    margin-left: 50px;
+    margin-top: 50px;
+}
+
+#grafico_2{
+	float:left;
+	margin: 0 auto;
+}
+
+#infEst {
+    height: 40px;
+    width: 100px;
+}
+
+.inferiorEst {
+    height: 40px;
+    width: 430px;
+}
+
+#infoEst{
+	float: left;
+	    width: 428px;
+    height: 38px;
+}
+
+#myChart{
+	float: left;
+	margin-left: 50px;
+	margin-top: 50px;
+}
+
+#myChart2{
+	float: left;
+	margin-left: 50px;
+	margin-top: 40px;
+	border:#F00 0px solid;
+}
